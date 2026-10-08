@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Project Workflow</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.heading{
+text-align:center;
+margin:40px 0;
+font-size:40px;
+color:#00e5ff;
+}
+
+.flow{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+padding-bottom:50px;
+}
+
+.step{
+width:80%;
+max-width:700px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:15px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+transition:.4s;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.step:hover{
+transform:scale(1.04);
+box-shadow:0 0 25px cyan;
+}
+
+.arrow{
+font-size:40px;
+color:#00e5ff;
+animation:move 1s infinite;
+}
+
+@keyframes move{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+.info{
+width:90%;
+margin:auto;
+background:rgba(255,255,255,.12);
+padding:25px;
+border-radius:15px;
+margin-top:30px;
+line-height:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🛡 Campus Safety</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="subjects.html">Subjects</a></li>
+
+<li><a href="workflow.html">Workflow</a></li>
+
+<li><a href="report.html">Report</a></li>
+
+<li><a href="demo.html">Analytics</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<h1 class="heading">
+Project Workflow
+</h1>
+
+<div class="flow">
+
+<div class="step">
+👤 Student / Staff Login
+</div>
+
+<div class="arrow">⬇</div>
+
+<div class="step">
+📝 Fill Incident Report Form
+</div>
+
+<div class="arrow">⬇</div>
+
+<div class="step">
+📸 Upload Photo / Evidence
+</div>
+
+<div class="arrow">⬇</div>
+
+<div class="step">
+💾 Store Report in Database
+</div>
+
+<div class="arrow">⬇</div>
+
+<div class="step">
+👮 Admin Reviews Incident
+</div>
+
+<div class="arrow">⬇</div>
+
+<div class="step">
+✅ Incident Verified & Action Taken
+</div>
+
+<div class="arrow">⬇</div>
+
+<div class="step">
+📊 Dashboard Analytics Updated
+</div>
+
+</div>
+
+<div class="info">
+
+<h2 style="color:#00e5ff;">Workflow Description</h2>
+
+<br>
+
+<p>
+
+The Campus Safety Incident Logger provides a simple and secure process for reporting campus incidents. Students or staff log in, submit incident details, and upload supporting evidence such as photos. The information is securely stored and reviewed by the administrator. After verification, appropriate action is taken, and the dashboard analytics are updated automatically. This workflow improves transparency, accountability, and campus safety.
+
+</p>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+
+</html>

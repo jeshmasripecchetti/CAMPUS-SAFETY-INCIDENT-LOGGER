@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Analytics Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+.heading{
+text-align:center;
+margin:35px;
+font-size:40px;
+color:#00e5ff;
+}
+
+.dashboard{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:20px;
+
+padding:20px;
+
+}
+
+.box{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(10px);
+
+padding:25px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.4s;
+
+}
+
+.box:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 20px cyan;
+
+}
+
+.box h2{
+
+font-size:42px;
+
+color:#00e5ff;
+
+}
+
+.chart{
+
+width:90%;
+
+margin:30px auto;
+
+background:rgba(255,255,255,.12);
+
+padding:20px;
+
+border-radius:20px;
+
+}
+
+table{
+
+width:90%;
+
+margin:40px auto;
+
+border-collapse:collapse;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(10px);
+
+}
+
+table th,table td{
+
+padding:15px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+th{
+
+background:#00bcd4;
+
+color:black;
+
+}
+
+tr:hover{
+
+background:rgba(255,255,255,.1);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🛡 Campus Safety</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="subjects.html">Subjects</a></li>
+
+<li><a href="workflow.html">Workflow</a></li>
+
+<li><a href="report.html">Report</a></li>
+
+<li><a href="demo.html">Analytics</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<h1 class="heading">Campus Safety Analytics</h1>
+
+<div class="dashboard">
+
+<div class="box">
+
+<h2>152</h2>
+
+<p>Total Reports</p>
+
+</div>
+
+<div class="box">
+
+<h2>118</h2>
+
+<p>Resolved Cases</p>
+
+</div>
+
+<div class="box">
+
+<h2>24</h2>
+
+<p>Pending Cases</p>
+
+</div>
+
+<div class="box">
+
+<h2>10</h2>
+
+<p>Emergency Alerts</p>
+
+</div>
+
+</div>
+
+<div class="chart">
+
+<canvas id="barChart"></canvas>
+
+</div>
+
+<div class="chart">
+
+<canvas id="pieChart"></canvas>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+
+<th>Incident</th>
+
+<th>Location</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>101</td>
+
+<td>Theft</td>
+
+<td>Library</td>
+
+<td>Resolved</td>
+
+</tr>
+
+<tr>
+
+<td>102</td>
+
+<td>Harassment</td>
+
+<td>Hostel</td>
+
+<td>Pending</td>
+
+</tr>
+
+<tr>
+
+<td>103</td>
+
+<td>Medical Emergency</td>
+
+<td>Canteen</td>
+
+<td>Resolved</td>
+
+</tr>
+
+<tr>
+
+<td>104</td>
+
+<td>Fire Alert</td>
+
+<td>Lab Block</td>
+
+<td>Emergency</td>
+
+</tr>
+
+</table>
+
+<script>
+
+new Chart(document.getElementById("barChart"),{
+
+type:'bar',
+
+data:{
+
+labels:["Theft","Harassment","Accident","Medical","Fire"],
+
+datasets:[{
+
+label:"Incidents",
+
+data:[35,22,18,40,10],
+
+backgroundColor:[
+"#03A9F4",
+"#4CAF50",
+"#FFC107",
+"#9C27B0",
+"#F44336"
+]
+
+}]
+
+}
+
+});
+
+new Chart(document.getElementById("pieChart"),{
+
+type:'pie',
+
+data:{
+
+labels:["Resolved","Pending","Emergency"],
+
+datasets:[{
+
+data:[118,24,10],
+
+backgroundColor:[
+"#4CAF50",
+"#FFC107",
+"#F44336"
+]
+
+}]
+
+}
+
+});
+
+</script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

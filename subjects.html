@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Relevant Subjects</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.heading{
+text-align:center;
+margin-top:40px;
+font-size:40px;
+color:#00e5ff;
+}
+
+.subjects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:40px;
+}
+
+.subject-card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+padding:25px;
+
+transition:.4s;
+
+box-shadow:0 0 15px rgba(0,0,0,.3);
+
+}
+
+.subject-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 25px cyan;
+
+}
+
+.subject-card h2{
+
+color:#00e5ff;
+
+margin-bottom:15px;
+
+}
+
+.subject-card p{
+
+line-height:28px;
+
+text-align:justify;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🛡 Campus Safety
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="subjects.html">Subjects</a></li>
+
+<li><a href="workflow.html">Workflow</a></li>
+
+<li><a href="report.html">Report</a></li>
+
+<li><a href="demo.html">Analytics</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<h1 class="heading">
+Relevant Subjects
+</h1>
+
+<div class="subjects">
+
+<div class="subject-card">
+
+<h2>Programming for Problem Solving (Python)</h2>
+
+<p>
+
+Python is used to develop the application logic, validate incident details, process user inputs, and manage the reporting system. It helps automate data processing and supports future integration with databases and analytics.
+
+</p>
+
+</div>
+
+<div class="subject-card">
+
+<h2>Engineering Mathematics</h2>
+
+<p>
+
+Mathematics is useful for analyzing incident records, generating statistics, calculating trends, and creating graphical reports that help administrators understand campus safety patterns.
+
+</p>
+
+</div>
+
+<div class="subject-card">
+
+<h2>English Communication Skills</h2>
+
+<p>
+
+Effective communication helps users write clear incident reports and enables the system to display professional messages, notifications, and documentation for administrators.
+
+</p>
+
+</div>
+
+<div class="subject-card">
+
+<h2>Basic Electrical & Electronics Engineering</h2>
+
+<p>
+
+Knowledge of sensors, CCTV cameras, alarms, and electronic security devices helps understand how safety monitoring systems work in a smart campus environment.
+
+</p>
+
+</div>
+
+<div class="subject-card">
+
+<h2>Engineering Graphics</h2>
+
+<p>
+
+Engineering Graphics helps in planning the user interface, dashboard layout, navigation flow, and visual representation of the project through diagrams and workflow models.
+
+</p>
+
+</div>
+
+<div class="subject-card">
+
+<h2>Environmental Science (Relevant Concept)</h2>
+
+<p>
+
+Environmental awareness contributes to creating a safe and secure campus by promoting responsible behavior, emergency preparedness, and sustainable safety practices.
+
+</p>
+
+</div>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+
+</html>

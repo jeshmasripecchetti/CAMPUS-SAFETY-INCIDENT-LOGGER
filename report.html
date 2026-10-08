@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Incident Report</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.heading{
+text-align:center;
+margin:40px;
+font-size:40px;
+color:#00e5ff;
+}
+
+.form-container{
+width:60%;
+margin:30px auto;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+label{
+display:block;
+margin-top:18px;
+font-weight:bold;
+font-size:17px;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:12px;
+margin-top:8px;
+border:none;
+border-radius:10px;
+background:rgba(255,255,255,.2);
+color:white;
+font-size:16px;
+outline:none;
+}
+
+input::placeholder,
+textarea::placeholder{
+color:#ddd;
+}
+
+textarea{
+resize:none;
+height:120px;
+}
+
+.submit-btn{
+margin-top:25px;
+width:100%;
+padding:15px;
+background:#00e5ff;
+color:black;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:30px;
+cursor:pointer;
+transition:.4s;
+}
+
+.submit-btn:hover{
+background:white;
+transform:scale(1.03);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🛡 Campus Safety</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="subjects.html">Subjects</a></li>
+
+<li><a href="workflow.html">Workflow</a></li>
+
+<li><a href="report.html">Report</a></li>
+
+<li><a href="demo.html">Analytics</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<h1 class="heading">Incident Report Form</h1>
+
+<div class="form-container">
+
+<form>
+
+<label>Full Name</label>
+
+<input type="text" placeholder="Enter your full name" required>
+
+<label>Student / Employee ID</label>
+
+<input type="text" placeholder="Enter ID Number" required>
+
+<label>Department</label>
+
+<select required>
+
+<option>Select Department</option>
+
+<option>CSE</option>
+
+<option>ECE</option>
+
+<option>EEE</option>
+
+<option>ME</option>
+
+<option>CIVIL</option>
+
+<option>AIML</option>
+
+<option>DS</option>
+
+</select>
+
+<label>Incident Type</label>
+
+<select required>
+
+<option>Select Incident</option>
+
+<option>Theft</option>
+
+<option>Harassment</option>
+
+<option>Accident</option>
+
+<option>Medical Emergency</option>
+
+<option>Fire</option>
+
+<option>Property Damage</option>
+
+<option>Other</option>
+
+</select>
+
+<label>Location</label>
+
+<input type="text" placeholder="Example: Library / Hostel / Block A">
+
+<label>Date</label>
+
+<input type="date">
+
+<label>Time</label>
+
+<input type="time">
+
+<label>Describe the Incident</label>
+
+<textarea placeholder="Write complete incident details..."></textarea>
+
+<label>Upload Evidence</label>
+
+<input type="file">
+
+<button class="submit-btn" type="submit">
+
+Submit Report
+
+</button>
+
+</form>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+
+</html>
